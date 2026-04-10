@@ -6,7 +6,7 @@
 
 *无需终端，省心部署*
 
-[![GitHub license](https://img.shields.io/github/license/dongyu23/hermes-installer-skill)](https://github.com/dongyu23/hermes-installer-skill/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green)](https://github.com/dongyu23/hermes-installer-skill/blob/main/LICENSE)
 [![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
 
 </div>
@@ -17,9 +17,17 @@
 
 ---
 
-## ✨ 一句话
+## ✨ 一站式服务
 
-**安装、配置、更新、诊断 — 全程对话完成，不用碰终端。**
+| 功能 | 说明 |
+|:----:|:-----|
+| 📦 **安装部署** | 让 AI 帮你克隆仓库、安装依赖、创建虚拟环境 |
+| 🔌 **配置 API** | 告诉 AI 你的提供商，自动配置 Coding Plan 端点 |
+| 🌐 **接入飞书** | 让 AI 帮你配置飞书机器人，一键配对用户 |
+| 🏥 **智能诊断** | API 连不上？网关报错？AI 帮你排查 |
+| 🗑️ **干净卸载** | 想重装？AI 帮你清理干净，不留残留 |
+
+**全程对话完成，不用碰终端。**
 
 ---
 
