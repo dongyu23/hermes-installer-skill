@@ -266,7 +266,35 @@ OPENAI_BASE_URL=https://ark.cn-beijing.volces.com/api/coding/v3
 
 ---
 
-## 阶跃星辰 Step
+## 阶跃星辰 Coding Plan（推荐用于 Coding 场景）
+
+**config.yaml:**
+```yaml
+model:
+  provider: custom
+  base_url: https://api.stepfun.com/step_plan/v1
+  default: MODEL_NAME
+```
+
+**.env:**
+```bash
+OPENAI_API_KEY=YOUR_API_KEY
+OPENAI_BASE_URL=https://api.stepfun.com/step_plan/v1
+```
+
+**可用模型：**
+- `step-1-8k`
+- `step-1-32k`
+- `step-1-128k`
+- `step-1v-8k`（视觉模型）
+
+**重要提示：**
+- **Coding Plan 端点**：`https://api.stepfun.com/step_plan/v1`（消耗 Coding Plan 额度）
+- **通用端点**：`https://api.stepfun.com/v1`（产生额外费用）
+
+---
+
+## 阶跃星辰 Step（通用端点）
 
 **config.yaml:**
 ```yaml
@@ -316,4 +344,5 @@ OPENAI_BASE_URL=YOUR_ENDPOINT_URL
 | Kimi | `https://api.kimi.com/coding/v1` | 标准 |
 | 阿里云百炼 | `https://coding.dashscope.aliyuncs.com/v1` | `sk-sp-xxxxx` |
 | 火山引擎 | `https://ark.cn-beijing.volces.com/api/coding/v3` | 标准 |
-| 腾讯云 | `https://api.lkeap.cloud.tencent.com/coding/v3` | 标准 |
+| 腾讯云 | `https://api.lkeap.cloud.tencent.com/coding/v3` | 标准（不含混元） |
+| 阶跃星辰 | `https://api.stepfun.com/step_plan/v1` | 标准 |

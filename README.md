@@ -43,6 +43,7 @@
 | 阿里云百炼 | `coding.dashscope.aliyuncs.com/v1` | 通义千问 |
 | 火山引擎 | `ark.cn-beijing.volces.com/api/coding/v3` | 豆包系列 |
 | 腾讯云 | `api.lkeap.cloud.tencent.com/coding/v3` | 不含混元 |
+| 阶跃星辰 | `api.stepfun.com/step_plan/v1` | Step 系列 |
 
 ### 通用端点
 
