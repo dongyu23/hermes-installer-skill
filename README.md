@@ -103,6 +103,22 @@ bash scripts/uninstall.sh --keep-config # 保留配置
 .\scripts\uninstall.ps1 -KeepConfig # 保留配置
 ```
 
+## 安装方法
+
+### 方法一：Git 克隆（推荐）
+
+```bash
+# OpenClaw
+git clone https://github.com/dongyu23/hermes-installer-skill.git ~/.openclaw/skills/hermes-installer-1.0.0
+```
+
+### 方法二：手动下载
+
+1. 下载 [最新版本](https://github.com/dongyu23/hermes-installer-skill/releases)
+2. 解压到 `~/.openclaw/skills/hermes-installer-1.0.0/`
+
+---
+
 ## 相关链接
 
 - Hermes Agent 官方文档：https://hermes-agent.nousresearch.com/docs/
