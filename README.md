@@ -47,7 +47,20 @@
 
 ## 📥 安装
 
-### 方式一：通过 ClawHub 安装（推荐）
+### 方式一：通过 SkillHub 安装
+
+```bash
+# 检查是否已安装 SkillHub CLI
+skillhub --version
+
+# 若未安装，安装 CLI
+curl -fsSL https://skillhub-1388575217.cos.ap-guangzhou.myqcloud.com/install/install.sh | bash -s -- --cli-only
+
+# 安装 hermes-installer 技能
+skillhub install hermes-installer
+```
+
+### 方式二：通过 ClawHub 安装（推荐）
 
 ```bash
 # 一键安装
@@ -58,7 +71,7 @@ npx clawhub install hermes-installer
 
 > 💡 已发布到 ClawHub: [hermes-installer@1.0.0](https://clawhub.ai/skill/hermes-installer)
 
-### 方式二：手动安装
+### 方式三：手动安装
 
 ```bash
 git clone https://github.com/dongyu23/hermes-installer-skill.git ~/.openclaw/skills/hermes-installer-1.0.0
