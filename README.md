@@ -46,6 +46,14 @@
 
 ## 📥 安装
 
+### 方式一：ClawHub（推荐）
+
+```bash
+npx clawhub install hermes-installer
+```
+
+### 方式二：手动安装
+
 ```bash
 git clone https://github.com/dongyu23/hermes-installer-skill.git ~/.openclaw/skills/hermes-installer-1.0.0
 ```
