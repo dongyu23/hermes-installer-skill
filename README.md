@@ -9,13 +9,13 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green)](https://github.com/dongyu23/hermes-installer-skill/blob/main/LICENSE)
 [![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
 
-</div>
-
 ---
 
 > 💡 **"告诉 OpenClaw，它来搞定 Hermes"**
 
 ---
+
+本技能让 OpenClaw 具备系统管理 Hermes 的能力，安装/配置/更新/卸载均可通过对话完成，无需手动执行命令。
 
 ## ✨ 一站式服务
 
