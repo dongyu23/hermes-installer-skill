@@ -2,9 +2,9 @@
 
 # hermes-installer.skill
 
-**让 OpenClaw 替你管理 Hermes Agent**
+**让 OpenClaw 替你管理 Hermes Agent** ⚡️
 
-*无需终端，省心部署*
+*📦 安装 · 🔧 配置 · 🔄 更新 · 🩺 诊断 · 🗑️ 卸载*
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green)](https://github.com/dongyu23/hermes-installer-skill/blob/main/LICENSE)
 [![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
@@ -12,7 +12,7 @@
 
 ---
 
-**本技能让 OpenClaw 具备系统管理 Hermes 的能力。安装/配置/更新/诊断/卸载，均可对话完成。**
+**本技能让 OpenClaw 具备系统管理 Hermes 的能力 🎯 安装 / 配置 / 更新 / 诊断 / 卸载，均可对话完成，无需敲一行命令。**
 
 [效果示例](#效果示例) · [安装](#安装) · [核心能力](#核心能力) · [技术细节](#技术细节)
 
