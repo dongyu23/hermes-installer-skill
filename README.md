@@ -189,19 +189,3 @@ hermes-installer-skill/
     └── doctor.sh/ps1            # 诊断
 ```
 
----
-
-## 技术来源
-
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent) — 官方仓库
-- [Hermes 文档](https://hermes-agent.nousresearch.com/docs/) — 官方文档
-- [Coding Plan](https://platform.zhipuai.cn/pricing) — 智谱 API 定价
-
----
-
-## 关于
-
-**作者**：dongyu23
-
-** License**：MIT — 随便用
-
