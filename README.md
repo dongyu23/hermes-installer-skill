@@ -46,17 +46,24 @@
 
 ## 📥 安装
 
-### 方式一：ClawHub（推荐）
+### 方式一：通过 ClawHub 安装（推荐）
 
 ```bash
+# 一键安装
 npx clawhub install hermes-installer
 ```
+
+安装后即可在 OpenClaw 中使用，无需其他配置。
+
+> 💡 已发布到 ClawHub: [hermes-installer@1.0.0](https://clawhub.ai/skill/hermes-installer)
 
 ### 方式二：手动安装
 
 ```bash
 git clone https://github.com/dongyu23/hermes-installer-skill.git ~/.openclaw/skills/hermes-installer-1.0.0
 ```
+
+手动安装后需要重启 OpenClaw 网关。
 
 ---
 
