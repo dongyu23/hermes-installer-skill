@@ -140,10 +140,33 @@ git clone https://github.com/dongyu23/hermes-installer-skill.git ~/.openclaw/ski
 ```
 > 帮我安装 Hermes
 > 配置 Kimi 的 API
+> 给 Hermes 安装 X/Twitter 插件
 > 帮我更新到最新版本
 > Hermes 连不上网，帮我看看
 > 卸载 Hermes
 ```
+
+## 可选：安装 X/Twitter 插件
+
+如果用户需要在 Hermes Agent 中 scrape/search tweets、search Twitter/X、read tweet replies、look up users、monitor tweets、export followers，或在确认后 post tweets/replies、send DMs、automate X actions，可以安装 [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) 作为原生 Hermes Agent X/Twitter plugin：
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+交互式安装会提示写入 `XQUIK_API_KEY`。非交互环境可以手动写入 `~/.hermes/.env`：
+
+```bash
+XQUIK_API_KEY=YOUR_XQUIK_API_KEY
+HERMES_TWEET_ENABLE_ACTIONS=false
+```
+
+安全边界：
+
+- `tweet_explore` 可以在没有 API key 时查看可用端点目录
+- `tweet_read` 需要 `XQUIK_API_KEY`
+- `tweet_action` 只有在 `HERMES_TWEET_ENABLE_ACTIONS=true` 时才用于发推、回复、DM、关注、监控和 webhook 等写入动作
+- 修改 `.env` 后，在交互式 CLI 中执行 `/reload`，或重启 gateway/cron 会话
 
 ---
 
@@ -188,4 +211,3 @@ hermes-installer-skill/
     ├── uninstall.sh/ps1         # 卸载
     └── doctor.sh/ps1            # 诊断
 ```
-

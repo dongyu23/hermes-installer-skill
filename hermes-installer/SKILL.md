@@ -1,6 +1,6 @@
 ---
 name: hermes-installer
-description: Hermes Agent 安装配置完整指南。当用户要求安装 Hermes Agent、部署 Hermes、配置模型提供商、配置飞书/Telegram/Discord 网关时使用此 Skill。触发词：安装 Hermes、部署 Hermes Agent、配置 Hermes、配置 GLM、配置 Kimi、配置 OpenRouter、配置阿里云百炼、配置腾讯云、配置火山引擎、配置阶跃星辰、Hermes 更新、Hermes 飞书配置。
+description: Hermes Agent 安装配置完整指南。当用户要求安装 Hermes Agent、部署 Hermes、配置模型提供商、配置飞书/Telegram/Discord 网关、配置 X/Twitter 插件时使用此 Skill。触发词：安装 Hermes、部署 Hermes Agent、配置 Hermes、配置 GLM、配置 Kimi、配置 OpenRouter、配置阿里云百炼、配置腾讯云、配置火山引擎、配置阶跃星辰、Hermes 更新、Hermes 飞书配置、Hermes Twitter、Hermes X。
 metadata:
   openclaw:
     requires:
@@ -78,6 +78,34 @@ hermes claw migrate --dry-run    # 预览将要迁移的内容
 hermes claw migrate --preset user-data   # 不包含密钥的迁移
 hermes claw migrate --overwrite  # 覆盖已有冲突
 ```
+
+## 可选：X/Twitter 插件
+
+当用户要求 Hermes scrape/search tweets、search Twitter/X、read tweet replies、look up users、monitor tweets、export followers，或在确认后 post tweets/replies、send DMs、automate X actions 时，可以安装 Hermes Tweet 作为原生 Hermes Agent X/Twitter plugin。
+
+### 安装
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+### 配置
+
+交互式安装会提示保存 `XQUIK_API_KEY`。非交互环境可以写入 `~/.hermes/.env`：
+
+```bash
+XQUIK_API_KEY=YOUR_XQUIK_API_KEY
+HERMES_TWEET_ENABLE_ACTIONS=false
+```
+
+如果 Hermes 已经运行，修改 `.env` 后在 CLI 中执行 `/reload`，或重启 gateway/cron 会话。
+
+### 安全边界
+
+- `tweet_explore`：搜索端点目录，不需要 API key
+- `tweet_read`：读取公开或只读端点，需要 `XQUIK_API_KEY`
+- `tweet_action`：写入、私有读取、发推、回复、DM、关注、监控和 webhook 动作；只有 `HERMES_TWEET_ENABLE_ACTIONS=true` 时启用
+- 在执行发推、回复、DM、关注、监控和 webhook 等动作前，必须先向用户复述具体动作并等待确认
 
 ## 快速安装
 
